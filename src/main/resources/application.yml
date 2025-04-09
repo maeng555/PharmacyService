@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: local #default
+    active: local
     group:
       local:
         - common
@@ -11,13 +11,13 @@ spring:
 spring:
   config:
     activate:
-      on-profile: common #??
+      on-profile: common
 
 ---
 spring:
   config:
     activate:
-      on-profile: local #??
+      on-profile: local
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
     url: jdbc:mariadb://localhost:3307/pharmacy-recommendation
@@ -40,4 +40,4 @@ spring:
 spring:
   config:
     activate:
-      on-profile: prod #??
+      on-profile: prod
